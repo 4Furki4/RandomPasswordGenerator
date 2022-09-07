@@ -73,11 +73,11 @@ p {
 #line {
     border: 1px solid #2F3E53;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .passwords{
-    margin-left: 135px;
+    margin-left: 155px;
     
 }
 #pw-1 {

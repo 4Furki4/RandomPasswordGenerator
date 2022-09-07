@@ -47,8 +47,6 @@ p {
 #generator {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding: 12px 20px 12px 20px;
     gap: 12px;
     background: #10B981;
@@ -79,7 +77,7 @@ p {
 }
 
 .passwords{
-    margin-left: 165px;
+    margin-left: 135px;
     
 }
 #pw-1 {
@@ -90,6 +88,7 @@ p {
     color: #10B981;
 }
 
+
 #pw-2 {
     margin-left: 120px ;
     background-color: #273549 ;
@@ -97,4 +96,12 @@ p {
     border-radius: 6px;
     border: none;
     color: #10B981;
+}
+
+#pw-1:hover {
+    background: #2f3e5334;
+}
+
+#pw-2:hover {
+    background: #2f3e5334;
 }

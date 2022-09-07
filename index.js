@@ -4,11 +4,23 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let pw1 = document.getElementById("pw-1")
 let pw2 = document.getElementById("pw-2")
+let pwInput = document.getElementById("pw-input")
 
-function generatePasswords(length = 15) {
+
+
+function generatePasswords() {
+    let passwordLength = null
+    passwordLength = prompt("Please enter a password length",15)
+    console.log(passwordLength)
+    if((passwordLength === null ))
+    {
+        passwordLength = 15
+    } else if( passwordLength < 8 ) {
+        passwordLength = prompt("Please enter a password length longer than 8 characters",15)
+    }
     let password1 =""
     let password2 =""
-    for(let i = 0; i<length; i++) {
+    for(let i = 0; i<passwordLength; i++) {
         let randomIndex1 = Math.floor(Math.random() * characters.length)
         let randomIndex2 = Math.floor(Math.random() * characters.length)
         password1 += characters[randomIndex1]
@@ -20,4 +32,14 @@ function generatePasswords(length = 15) {
 function setPasswords(password1, password2) {
     pw1.textContent = password1;
     pw2.textContent = password2;
+}
+
+function copy1() {
+    navigator.clipboard.writeText(pw1.textContent)
+    alert("Password copied: " + pw1.textContent);
+}
+
+function copy2() {
+    navigator.clipboard.writeText(pw2.textContent)
+    alert("Password copied: " + pw2.textContent);
 }

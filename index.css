@@ -105,3 +105,24 @@ p {
 #pw-2:hover {
     background: #2f3e5334;
 }
+
+.configuration {
+    margin-top: 15px;
+    margin-left: 150px;
+}
+
+#saveButton {
+    margin-left: 160px;
+    margin-top: 15px;
+    color: #10B981;
+    background-color: #273549 ;
+    border-radius: 6px;
+    border: none;
+}
+
+#saveButton:hover {
+    background: #2f3e53b0;
+}
+#saveButton:active {
+    background: #10b98134;
+}
